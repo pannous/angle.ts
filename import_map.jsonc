@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "dos": "https://deno.land/x/dos@v0.11.0/mod.ts",
+    "fmt/": "https://deno.land/std@0.164.0/fmt/",
+    "/": "./src/",
+    "./": "./"
+  }
+}

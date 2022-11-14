@@ -18,6 +18,11 @@
     "url": "https://github.com/pannous/angle/issues"
   },
   "homepage": "https://github.com/pannous/angle#readme",
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
     "binaryen": "^39.0.0",
     "fs-readfile-promise": "",
