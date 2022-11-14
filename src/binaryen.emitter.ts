@@ -1,19 +1,23 @@
 // import {Param} from "./ast"; ES7 node 10, .mjs only
 // https://github.com/WebAssembly/binaryen/wiki/binaryen.js-API
 
-if (Binaryen = require('binaryen')) 'ok' //node bug?
-let wasm = mod = new Binaryen.Module()
-let ast = require('./ast')
+import {createRequire} from "https://deno.land/std/node/module.ts"
+
+const require = createRequire(import.meta.url)
+
+Binaryen = require('binaryen')
+let mod: Binaryen.Module = new Binaryen.Module()
+let ast = require('./ast.ts')
 let {Add} = require('./ast')
 // Binaryen.setAPITracing(true)
 // Binaryen.setAPITracing(false)
 
-let int=wasm.i32.const
+let int = wasm.i32.const
 // let float=wasm.f32.const
-let float=wasm.f64.const
+let float = wasm.f64.const
 let f32 = Binaryen.f32;
 let f64 = Binaryen.f64;
-const i32=Binaryen.i32
+const i32 = Binaryen.i32
 const int32=Binaryen.i32
 const chars=Binaryen.i32
 const I32=wasm.i32

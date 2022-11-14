@@ -2,10 +2,10 @@
   "name": "angle",
   "version": "1.0.12",
   "description": "angle programming language",
-  "main": "english_parser.js",
+  "main": "src/english_parser.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pannous/angle.git"
+    "url": "git+https://github.com/pannous/angle.ts.git"
   },
   "keywords": [
     "angle",
@@ -15,7 +15,7 @@
   "author": "Pannous <info@pannous.com> (http://pannous.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pannous/angle/issues"
+    "url": "https://github.com/pannous/angle.ts/issues"
   },
   "homepage": "https://github.com/pannous/angle#readme",
   "browser": {
