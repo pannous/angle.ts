@@ -1,0 +1,1 @@
+console.log('angle.ts v0.0.0')

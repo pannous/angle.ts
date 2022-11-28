@@ -1,21 +1,10 @@
 import binaryen from "npm:binaryen"
+// import binaryen from "https://www.npmjs.com/package/binaryen"
+// import * as binaryen from "binaryen";
+// import {error, file_exists, readFile} from "../extensions.ts"
 
 let i32 = binaryen.i32
-// import {Module} from "npm:binaryen"
-// import {Module} from "/binaryen.ts"
-// import * as binaryen from "binaryen";
 import readFile = Deno.readFile;
-// import {Features} from "../binaryen";
-// import {readBinary} from "npm:binaryen"// "../node_modules.bad/binaryen";
-// import Module = WebAssembly.Module;
-// import {error, file_exists, readFile} from "../extensions.ts"
-// import binaryen from "https://www.npmjs.com/package/binaryen"
-// import App from './App'
-// import App from './App.tsx'
-// App.test()
-// import binaryen from "npm:binaryan"
-// import {require} from "https://raw.githubusercontent.com/nuxodin/deno-require/master/require.js";
-// let binaryen={readBinary(){}}
 let wasm_file = "/Users/me/dev/angles/angle.ts/test/test.wasm";
 let wasm_bytes = await readFile(wasm_file);
 const module: binaryen.Module = binaryen.readBinary(wasm_bytes);
